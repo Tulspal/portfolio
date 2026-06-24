@@ -1,15 +1,15 @@
 ```css
 :root {
-  --bg: #f5f8fc;
+  --bg: #f6f9fc;
   --surface: #ffffff;
-  --surface-soft: #eef5fb;
-  --primary: #0b4f8a;
-  --primary-dark: #08365d;
-  --accent: #1b76c5;
-  --text: #15324b;
-  --muted: #5b7085;
-  --border: #d7e3ef;
-  --shadow: 0 12px 30px rgba(8, 54, 93, 0.08);
+  --surface-soft: #f1f7fd;
+  --primary: #1d5fa8;
+  --primary-dark: #174a82;
+  --accent: #2b78c5;
+  --text: #16324a;
+  --muted: #5f7488;
+  --border: #dbe6f1;
+  --shadow: 0 12px 30px rgba(23, 74, 130, 0.08);
 }
 
 * {
@@ -36,9 +36,10 @@ body {
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-  color: #ffffff;
+  background: linear-gradient(135deg, #eef6ff, #dcecff);
+  color: var(--text);
   padding: 72px 0 56px;
+  border-bottom: 1px solid var(--border);
 }
 
 .hero-grid {
@@ -47,30 +48,32 @@ body {
   gap: 28px;
   align-items: start;
 }
-
 .eyebrow {
   margin: 0 0 10px;
   font-size: 0.85rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  opacity: 0.9;
+  color: var(--primary);
+  font-weight: 700;
 }
 
 h1 {
   margin: 0;
   font-size: 3rem;
   line-height: 1.1;
+  color: var(--primary-dark);
 }
-
 .subtitle {
   margin: 14px 0 12px;
   font-size: 1.15rem;
   font-weight: 700;
+  color: var(--text);
 }
+
 
 .summary {
   max-width: 720px;
-  color: rgba(255, 255, 255, 0.92);
+  color: var(--muted);
 }
 
 .hero-actions {
@@ -94,24 +97,22 @@ h1 {
 }
 
 .btn-primary {
-  background: #ffffff;
-  color: var(--primary-dark);
+  background: var(--primary);
+  color: #ffffff;
   border: 1px solid transparent;
 }
 
 .btn-secondary {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: #ffffff;
+  color: var(--primary-dark);
+  border: 1px solid var(--border);
 }
-
 .hero-card {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border);
   border-radius: 18px;
   padding: 24px;
-  backdrop-filter: blur(4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow);
 }
 
 .hero-card h3 {
