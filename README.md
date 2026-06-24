@@ -1,2 +1,3 @@
-# portfolio
-My Data Analyst Portfolio
+# Tulspal Kaur Portfolio
+
+GitHub Pages portfolio website files.
